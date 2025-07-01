@@ -1091,6 +1091,57 @@ class WindowsFaceRecognition:
         print("   • Comprehensive security logging")
         print("✅ System ready for maximum security operation!")
 
+    def mark_attendance_gui(self, status_callback=None):
+        """Mark attendance using face recognition with GUI status callbacks"""
+        if status_callback:
+            status_callback("👁️ Starting Face Recognition Attendance System", "info")
+        
+        # Check if model exists
+        if not os.path.exists(self.model_file):
+            if status_callback:
+                status_callback("❌ No trained model found! Please train the model first.", "error")
+            return False
+        
+        # Load the trained model
+        try:
+            self.recognizer.read(self.model_file)
+            if status_callback:
+                status_callback("✅ Model loaded successfully", "success")
+        except Exception as e:
+            if status_callback:
+                status_callback(f"❌ Error loading model: {str(e)}", "error")
+            return False
+        
+        # Load student data
+        try:
+            students_df = pd.read_csv(self.students_csv)
+            if students_df.empty:
+                if status_callback:
+                    status_callback("❌ No students registered!", "error")
+                return False
+            if status_callback:
+                status_callback(f"📚 Loaded {len(students_df)} registered students", "success")
+        except:
+            if status_callback:
+                status_callback("❌ No students registered!", "error")
+            return False
+        
+        return True  # Initialization successful
+    
+    def check_attendance_ready(self):
+        """Check if attendance system is ready (model trained, students registered)"""
+        if not os.path.exists(self.model_file):
+            return False, "No trained model found. Please train the model first."
+        
+        try:
+            students_df = pd.read_csv(self.students_csv)
+            if students_df.empty:
+                return False, "No students registered. Please register students first."
+        except:
+            return False, "No students registered. Please register students first."
+        
+        return True, "Attendance system ready"
+    
 def main():
     """Main function to run the attendance system"""
     print("🎓 Welcome to Face Recognition Attendance System")
