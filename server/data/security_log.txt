@@ -1,0 +1,22 @@
+[2025-07-01 16:38:27] AUTH_SUCCESS - Student ID: 122 - Admin authenticated for registration: siddesh1 (sid@gmail.com)
+[2025-07-01 16:38:27] DUPLICATE_BLOCKED - Student ID: 122 - Registration blocked - Student ID 122 already exists!
+[2025-07-01 16:38:59] AUTH_SUCCESS - Student ID: 123 - Admin authenticated for registration: siddesh1 (siddesh1@gmail.com)
+[2025-07-01 16:38:59] DUPLICATE_CHECK_PASSED - Student ID: 123 - No duplicates found for: siddesh1 (siddesh1@gmail.com)
+[2025-07-01 16:39:14] FACE_CAPTURE_SUCCESS - Student ID: 123 - Captured 25 validated images
+[2025-07-01 16:39:15] REGISTRATION_SUCCESS - Student ID: 123 - Student successfully registered: siddesh1 (siddesh1@gmail.com)
+[2025-07-01 16:47:18] AUTH_SUCCESS - Student ID: 124 - Admin authenticated for registration: siddesh2 (siddesh@yahoo.com)
+[2025-07-01 16:47:18] DUPLICATE_CHECK_PASSED - Student ID: 124 - No duplicates found for: siddesh2 (siddesh@yahoo.com)
+[2025-07-01 16:47:34] FACE_CAPTURE_SUCCESS - Student ID: 124 - Captured 25 validated images
+[2025-07-01 16:47:35] FACE_ANALYSIS_DETAILED - Student ID: 124 - Face similarity analysis: Top match 123 with score 0.588
+[2025-07-01 16:47:35] ULTRA_HIGH_FRAUD_BLOCKED - Student ID: 124 - Ultra high similarity detected - Registration blocked for security: siddesh2 (siddesh@yahoo.com)
+[2025-07-01 16:48:13] AUTH_SUCCESS - Student ID: 124 - Admin authenticated for registration: siddesh3 (siddesh@yahoo.com)
+[2025-07-01 16:48:13] DUPLICATE_CHECK_PASSED - Student ID: 124 - No duplicates found for: siddesh3 (siddesh@yahoo.com)
+[2025-07-01 16:48:21] FACE_CAPTURE_SUCCESS - Student ID: 124 - Captured 25 validated images
+[2025-07-01 16:48:21] FACE_ANALYSIS_DETAILED - Student ID: 124 - Face similarity analysis: Top match 1 with score 0.471
+[2025-07-01 16:48:21] SIMILARITY_CHECK_ERROR - Student ID: 124 - Face similarity check failed: single positional indexer is out-of-bounds
+[2025-07-01 16:48:21] REGISTRATION_SUCCESS - Student ID: 124 - Student successfully registered: siddesh3 (siddesh@yahoo.com)
+[2025-07-01 16:48:49] AUTH_SUCCESS - Student ID: 125 - Admin authenticated for registration: siddesh5 (siddesh5@gmail.com)
+[2025-07-01 16:48:49] DUPLICATE_CHECK_PASSED - Student ID: 125 - No duplicates found for: siddesh5 (siddesh5@gmail.com)
+[2025-07-01 16:48:57] FACE_CAPTURE_SUCCESS - Student ID: 125 - Captured 25 validated images
+[2025-07-01 16:48:58] FACE_ANALYSIS_DETAILED - Student ID: 125 - Face similarity analysis: Top match 124 with score 0.612
+[2025-07-01 16:48:58] ULTRA_HIGH_FRAUD_BLOCKED - Student ID: 125 - Ultra high similarity detected - Registration blocked for security: siddesh5 (siddesh5@gmail.com)

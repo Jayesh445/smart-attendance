@@ -158,11 +158,12 @@ def main():
     
     print("\n🎉 Setup completed!")
     print("\n📋 Next steps:")
-    print("1️⃣  Run: python simple_attendance.py (for easy interface)")
-    print("2️⃣  Or run: python face_recognition_system.py (for traditional CV)")
-    print("3️⃣  Or run: python advanced_face_recognition.py (for advanced recognition)")
-    print("4️⃣  Or run: python api.py (for REST API server)")
-    print("5️⃣  Or run: python utils.py (for system utilities)")
+    print("1️⃣  Run: python main_system.py (RECOMMENDED - Windows Compatible with Security)")
+    print("2️⃣  Or run: python simple_attendance.py (for easy interface)")
+    print("3️⃣  Or run: python face_recognition_system.py (for traditional CV)")
+    print("4️⃣  Or run: python advanced_face_recognition.py (for advanced recognition)")
+    print("5️⃣  Or run: python api.py (for REST API server)")
+    print("6️⃣  Or run: python utils.py (for system utilities)")
     
     print("\n📖 Read README.md for detailed usage instructions")
 
